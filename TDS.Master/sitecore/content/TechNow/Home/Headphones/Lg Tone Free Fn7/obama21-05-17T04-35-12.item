@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {88FADFCC-313D-4794-A957-E60D7E1D286F}
+database: master
+path: /sitecore/content/TechNow/Home/Headphones/Lg Tone Free Fn7/obama21-05-17T04-35-12
+parent: {627A6ED9-72FE-44B2-89ED-37B9338888FA}
+name: obama21-05-17T04-35-12
+master: {00000000-0000-0000-0000-000000000000}
+template: {7F2D992E-9249-4B9C-9C2F-650912953C27}
+templatekey: CommentTemp
+
+----version----
+language: en
+version: 1
+revision: c72a930e-80bc-40f4-9250-2f59dd7849a9
+
+----field----
+field: {C5C745AB-86CE-436C-A307-2DEE0D01FC38}
+name: name
+key: name
+content-length: 5
+
+obama
+----field----
+field: {F27C246B-53AF-4227-9F0B-00FBC8DBA1F2}
+name: email
+key: email
+content-length: 9
+
+moasjdhah
+----field----
+field: {3129DCCF-8D97-4F7E-83F0-68985264A3F1}
+name: comment
+key: comment
+content-length: 20
+
+co con card man hinh
+----field----
+field: {5CBD79E9-34AF-41D2-8539-A593A1D13040}
+name: date time
+key: date time
+content-length: 16
+
+20210517T102200Z
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20210517T093512Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c72a930e-80bc-40f4-9250-2f59dd7849a9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20210517T102509Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

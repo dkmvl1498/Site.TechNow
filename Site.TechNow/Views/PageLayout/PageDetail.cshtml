@@ -1,0 +1,13 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+  Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+
+<head>
+  @Html.Sitecore().VisitorIdentification()
+</head>
+
+@Html.Sitecore().Placeholder("container")

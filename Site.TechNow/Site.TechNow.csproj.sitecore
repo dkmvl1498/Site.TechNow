@@ -1,0 +1,17 @@
+﻿<Project>
+  <PropertyGroup>
+    <Site Server="https://site.core.website.glass.sc/" UserName="sitecore\admin" IsRemoteSitecore="False" />
+  </PropertyGroup>
+  <File Include="Views\PageLayout\Index.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/PageLayout/Index.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{B6135489-D713-4DAF-8F87-15E2D0213055}</Item>
+  </File>
+  <File Include="Views\PageLayout\PageDetail.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/PageLayout/PageDetail.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{8B1F6876-EFB8-4EB9-B2BB-AEA19F133B8E}</Item>
+  </File>
+  <File Include="Views\PageLayout\ContactLayout.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/PageLayout/ContactLayout.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{FE195B88-6A15-4507-91C0-C92798EDCFFF}</Item>
+  </File>
+</Project>

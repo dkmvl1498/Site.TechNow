@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {B5F74D84-3F7C-4CC6-B170-3D7BD5079D87}
+database: master
+path: /sitecore/content/TechNow/Home/Smart Watch
+parent: {E8D1167E-0718-4EF2-9D18-3DEF63604133}
+name: Smart Watch
+master: {00000000-0000-0000-0000-000000000000}
+template: {A2EA636D-FBFA-4F7D-89CD-E8C4F2522429}
+templatekey: Page site
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{C38072B3-50FA-4608-977D-F2CD6F18B211}
+----version----
+language: en
+version: 1
+revision: d7ea8b9e-b4b6-4230-a0b0-0764f9f86f65
+
+----field----
+field: {27CCFF4D-3E7A-4326-97D7-69F8F7AAD08A}
+name: TitePage
+key: titepage
+content-length: 11
+
+Smart Watch
+----field----
+field: {1DEF3AAA-6131-49D5-A348-D59A01E824C2}
+name: UrlPage
+key: urlpage
+content-length: 155
+
+<link id="{B5F74D84-3F7C-4CC6-B170-3D7BD5079D87}" querystring="" text="" anchor="" url="/TechNow/Home/Smart Watch" title="" class="" linktype="internal" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20210505T080706Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d7ea8b9e-b4b6-4230-a0b0-0764f9f86f65
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20210505T085154Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

@@ -1,0 +1,93 @@
+----item----
+version: 1
+id: {5B4F6B9C-D66B-4FFB-9726-F27F96B20092}
+database: master
+path: /sitecore/content/TechNow/Datasource/Header
+parent: {4B9F1B69-C23A-44CF-8E45-16DEACD4EBD3}
+name: Header
+master: {00000000-0000-0000-0000-000000000000}
+template: {9B1862EE-48F8-4F46-B247-96EDB138BAB3}
+templatekey: Header template
+
+----version----
+language: en
+version: 1
+revision: d240ea00-94b1-453a-96eb-d17d948eecb9
+
+----field----
+field: {1E93EAA8-C12E-4B90-A339-A0E1339490C4}
+name: Logo Img
+key: logo img
+content-length: 58
+
+<image mediaid="{BE2FE54A-D6C0-4E6C-B716-36399F85D023}" />
+----field----
+field: {E655CB87-3F3C-45E3-9207-393427F6CA3F}
+name: Time
+key: time
+content-length: 16
+
+20210504T170000Z
+----field----
+field: {50E1F64F-7C2D-4A9A-83FB-21038BAA9330}
+name: Link Contact
+key: link contact
+content-length: 194
+
+{B714DEDD-CE09-4935-A7E1-F970203C85CD}|{FBFE4527-B5EF-4507-802F-867E28241ECC}|{3BF2318A-E95C-4310-A3D6-12217CC83E2C}|{0BFAB5DA-4FBD-4D6B-B113-353936A7B3DA}|{606565E4-586C-4F06-863B-5025AAEC9B9C}
+----field----
+field: {A1830487-68E9-4C7B-B069-DBB06D705784}
+name: Title Login
+key: title login
+content-length: 5
+
+Login
+----field----
+field: {A3DBFCFB-295D-4645-B40D-3BD5C97271D4}
+name: Title Register
+key: title register
+content-length: 8
+
+Register
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20210505T101306Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d240ea00-94b1-453a-96eb-d17d948eecb9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20210505T102012Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {8DD04A71-44B8-4AE2-B826-37888ECB9796}
+database: master
+path: /sitecore/content/TechNow/Datasource/Popular News
+parent: {4B9F1B69-C23A-44CF-8E45-16DEACD4EBD3}
+name: Popular News
+master: {00000000-0000-0000-0000-000000000000}
+template: {9B42572A-48A1-48F6-BABF-B770936F5CCB}
+templatekey: Popular News
+
+----version----
+language: en
+version: 1
+revision: cf3792b3-d5ca-4c9f-a7eb-8e71550f7809
+
+----field----
+field: {2C215C9D-9C7F-48E0-A22D-9728D92CFB10}
+name: title popular
+key: title popular
+content-length: 12
+
+Popular News
+----field----
+field: {46D2E179-6639-48DE-8A7B-C2D5779837DC}
+name: List posts
+key: list posts
+content-length: 155
+
+{627A6ED9-72FE-44B2-89ED-37B9338888FA}|{2B71B9A4-3A14-4761-BBAE-22D933AB512B}|{B8CB25D5-B4F0-402E-A692-95F6D7C51180}|{A7D519A0-0E27-4BD2-A478-09A9166AC2D7}
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20210514T030846Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cf3792b3-d5ca-4c9f-a7eb-8e71550f7809
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20210514T030950Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

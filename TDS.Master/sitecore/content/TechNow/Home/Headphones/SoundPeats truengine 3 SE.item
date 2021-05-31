@@ -1,0 +1,93 @@
+----item----
+version: 1
+id: {97A8059E-2599-4F55-BE7C-3AC8CC4D8E7F}
+database: master
+path: /sitecore/content/TechNow/Home/Headphones/SoundPeats truengine 3 SE
+parent: {EB99ED93-0539-449C-9705-1A670B4B38D8}
+name: SoundPeats truengine 3 SE
+master: {00000000-0000-0000-0000-000000000000}
+template: {C38072B3-50FA-4608-977D-F2CD6F18B211}
+templatekey: Posts template
+
+----version----
+language: en
+version: 1
+revision: 179341a4-0428-45e1-b996-a7ac0189ab91
+
+----field----
+field: {3E53A874-6E09-40CB-B84C-EAC48D73DA40}
+name: title img
+key: title img
+content-length: 14
+
+Truengine 3 se
+----field----
+field: {F4866EB0-7882-4946-8B55-096E711D62D2}
+name: Img Post
+key: img post
+content-length: 58
+
+<image mediaid="{1BA7CC1D-951D-4B9B-A117-40B80BC6DADE}" />
+----field----
+field: {AE6A069F-9D23-4B60-BFB4-405C016FC6BA}
+name: Title Post
+key: title post
+content-length: 65
+
+Earbuds Soundpeats Truengine 3 SE - trải nghiệm âm thanh hoàn hảo
+----field----
+field: {34BAA4AD-1C75-4390-8F8D-34B7F20A52AD}
+name: Time Post
+key: time post
+content-length: 16
+
+20210505T090900Z
+----field----
+field: {7A1E17E2-F032-4130-953B-51B122634FDE}
+name: Description
+key: description
+content-length: 190
+
+Tai nghe không dây Earbuds Soundpeats Truengine 3 SE mang đến cho người dùng cảm nhận âm thanh sắc nét, chất lượng cực đỉnh. Đây là sản phẩm luôn luôn đồng hành cùng bạn trên mọi chặng đường
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20210505T090920Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+179341a4-0428-45e1-b996-a7ac0189ab91
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20210505T091209Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

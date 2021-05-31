@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!-- favicon -->
+    <link href="assets/img/favicon.png" rel=icon>
+
+    <!-- web-fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="~/Datasource/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- font-awesome -->
+    <link href="~/Datasource/fonts/font-awesome/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Mobile Menu Style -->
+    <link href="~/Datasource/css/mobile-menu.css" rel="stylesheet" />
+
+    <!-- Owl carousel -->
+    <link href="~/Datasource/css/owl.carousel.css" rel="stylesheet" />
+    <link href="~/Datasource/css/owl.theme.default.min.css" rel="stylesheet" />
+
+    <!-- Theme Style -->
+    <link href="~/Datasource/css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <section id="header_section_wrapper" class="header_section_wrapper">
+        <div class="container">
+            @Html.Sitecore().Rendering("{9F5E3933-AB18-4E6F-8B96-5C4932EEB86A}")
+            @Html.Sitecore().Rendering("{B9B6576B-50AA-470E-B8D8-54F92F37B204}")
+        </div>
+        <!-- .container -->
+    </section>
+    <!-- header_section_wrapper -->
+
+    <content>
+        @RenderBody()
+    </content>
+    <footer>
+
+    </footer>
+
+    <!-- jquery Core-->
+    <script src="~/Datasource/Scripts/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="~/Datasource/Scripts/bootstrap.min.js"></script>
+    <!-- Theme Menu -->
+    <script src="~/Datasource/Scripts/mobile-menu.js"></script>
+    <!-- Owl carousel -->
+    <script src="~/Datasource/Scripts/owl.carousel.min.js"></script>
+    <!-- Theme Script -->
+    <script src="~/Datasource/Scripts/script.js"></script>
+</body>
+</html>

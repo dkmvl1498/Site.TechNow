@@ -1,0 +1,26 @@
+﻿@model Site.TechNow.Models.sitecore.templates.TechNow_template.Posts_Template
+
+<div class="entity_inner__title header_purple">
+    <h2>Readers Comment</h2>
+</div>
+<!-- entity_title -->
+@foreach (var listCmt in Model.listCmt.OrderByDescending(x => x.Date_Time).ToList().Take(3))
+{
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img alt="64x64" class="media-object" data-src="~/Datasource/img/reader_img1.jpg"
+                     src="~/Datasource/img/reader_img1.jpg" data-holder-rendered="true">
+            </a>
+        </div>
+        <div class="media-body">
+            <h2 class="media-heading"><a href="#">@listCmt.Name</a></h2>
+            @listCmt.Comment
+            <div class="entity_vote">
+                <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a>
+                <a href="#"><span class="reply_ic">Reply </span></a>
+            </div>
+        </div>
+    </div>
+}

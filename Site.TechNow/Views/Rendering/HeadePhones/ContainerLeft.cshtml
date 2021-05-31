@@ -1,0 +1,131 @@
+﻿@model Site.TechNow.Models.sitecore.templates.TechNow_template.Page_Site
+@using Glass.Mapper.Sc.Web.Mvc
+@using Sitecore.Data.Items
+@{
+    var entityProduct = Model.Children.OrderByDescending(x => x.Time_Post).FirstOrDefault();
+    int dem = 0;
+}
+
+<div class="col-md-8">
+    <div class="entity_wrapper">
+        <div class="entity_title header_purple">
+            <h1><a href="@Model.UrlPage" target="_blank">@Html.Glass().Editable(x => x.TitePage)</a></h1>
+        </div>
+        <!-- entity_title -->
+
+        <div class="entity_thumb">
+            @Html.Glass().RenderImage(entityProduct, x => x.Img_Post, new { @class = "img-responsive", @alt = "feature-top" }, isEditable: true)
+        </div>
+        <!-- entity_thumb -->
+
+        <div class="entity_title">
+            <a href="single.html" target="_blank">
+                <h3>
+                    @Html.Glass().Editable(entityProduct, x => x.Title_Post)
+                </h3>
+            </a>
+        </div>
+        <!-- entity_title -->
+
+        <div class="entity_meta">
+            <a href="#">@Html.Glass().Editable(entityProduct, x => x.Time_Post)</a>, by: <a href="#">Eric joan</a>
+        </div>
+        <!-- entity_meta -->
+
+        <div class="entity_content">
+            @Html.Glass().Editable(entityProduct, x => x.Description)
+        </div>
+        <!-- entity_content -->
+
+        <div class="entity_social">
+            <span><i class="fa fa-share-alt"></i>424 <a href="#">Shares</a> </span>
+            <span><i class="fa fa-comments-o"></i>4 <a href="#">Comments</a> </span>
+        </div>
+        <!-- entity_social -->
+
+    </div>
+    <!-- entity_wrapper -->
+    @for (int i = 0; i < Model.Children.Count(); i+=2)
+    {
+    <div class="row">
+        <div class="col-md-6">
+            <div class="category_article_body">
+                <div class="top_article_img">
+                    @Html.Glass().RenderImage(Model.Children.ElementAt(i), x => x.Img_Post, new { @class = "img-fluid", @alt = "feature-top" }, isEditable: true)
+                </div>
+                <!-- top_article_img -->
+
+                <div class="category_article_title">
+                    <h5>
+                        <a href="single.html" target="_blank">
+                            @Html.Glass().Editable(Model.Children.ElementAt(i), x => x.Title_Post)
+                        </a>
+                    </h5>
+                </div>
+                <!-- category_article_title -->
+
+                <div class="article_date">
+                    <a href="#">@Html.Glass().Editable(Model.Children.ElementAt(i), x => x.Time_Post)</a>, by: <a href="#">Eric joan</a>
+                </div>
+                <!-- article_date -->
+
+                <div class="category_article_content">
+                    @Html.Glass().Editable(Model.Children.ElementAt(i), x => x.Description)
+                </div>
+                <!-- category_article_content -->
+
+                <div class="article_social">
+                    <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
+                    <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
+                </div>
+                <!-- article_social -->
+
+            </div>
+            <!-- category_article_body -->
+
+        </div>
+        <!-- col-md-6 -->
+        @if (i < Model.Children.Count() && (i+1) <= Model.Children.Count())
+        {
+            <div class="col-md-6">
+                <div class="category_article_body">
+                    <div class="top_article_img">
+                        @Html.Glass().RenderImage(Model.Children.ElementAt(i), x => x.Img_Post, new { @class = "img-fluid", @alt = "feature-top" }, isEditable: true)
+                    </div>
+                    <!-- top_article_img -->
+
+                    <div class="category_article_title">
+                        <h5>
+                            <a href="single.html" target="_blank">
+                                @Html.Glass().Editable(Model.Children.ElementAt(i), x => x.Title_Post)
+                            </a>
+                        </h5>
+                    </div>
+                    <!-- category_article_title -->
+
+                    <div class="article_date">
+                        <a href="#">@Html.Glass().Editable(Model.Children.ElementAt(i), x => x.Time_Post)</a>, by: <a href="#">Eric joan</a>
+                    </div>
+                    <!-- article_date -->
+
+                    <div class="category_article_content">
+                        @Html.Glass().Editable(Model.Children.ElementAt(i), x => x.Description)
+                    </div>
+                    <!-- category_article_content -->
+
+                    <div class="article_social">
+                        <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
+                        <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
+                    </div>
+                    <!-- article_social -->
+
+                </div>
+                <!-- category_article_body -->
+            </div>
+        }
+
+        <!-- col-md-6 -->
+    </div>
+        <!-- row -->
+    }
+</div>

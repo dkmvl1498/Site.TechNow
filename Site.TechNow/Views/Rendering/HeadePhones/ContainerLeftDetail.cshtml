@@ -1,0 +1,159 @@
+﻿@model Site.TechNow.Models.sitecore.templates.TechNow_template.Posts_Template
+@using Glass.Mapper.Sc.Web.Mvc
+@using Sitecore.Data.Items
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.Mvc.Presentation
+<head>
+    <title>@Model.Title_Post</title>
+    @Html.Sitecore().VisitorIdentification()
+</head>
+<div class="col-md-8">
+    <div class="entity_wrapper">
+        <div class="entity_title">
+            <h1><a href="#">@Html.Glass().Editable(Model, x => x.Title_Post)</a></h1>
+        </div>
+        <!-- entity_title -->
+
+        <div class="entity_meta">
+            <a href="#" target="_self">@Html.Glass().Editable(Model, x => x.Time_Post)</a>, by: <a href="#" target="_self">Eric joan</a>
+        </div>
+        <!-- entity_meta -->
+
+        <div class="entity_rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-full"></i>
+        </div>
+        <!-- entity_rating -->
+
+        <div class="entity_social">
+            <a href="#" class="icons-sm sh-ic">
+                <i class="fa fa-share-alt"></i>
+                <b>424</b> <span class="share_ic">Shares</span>
+            </a>
+            <a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a>
+            <!--Twitter-->
+            <a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a>
+            <!--Google +-->
+            <a href="#" class="icons-sm inst-ic"><i class="fa fa-google-plus"> </i></a>
+            <!--Linkedin-->
+            <a href="#" class="icons-sm tmb-ic"><i class="fa fa-ge"> </i></a>
+            <!--Pinterest-->
+            <a href="#" class="icons-sm rss-ic"><i class="fa fa-rss"> </i></a>
+        </div>
+        <!-- entity_social -->
+
+        <div class="entity_thumb">
+            @Html.Glass().RenderImage(Model, x => x.Img1, new { @class = "img-responsive", @alt = "feature-top" }, isEditable: true)
+            <img class="img-responsive" src="assets/img/category_img_top.jpg" alt="feature-top">
+        </div>
+        <!-- entity_thumb -->
+        <div class="entity_content">
+            <p>
+                @Html.Glass().Editable(Model, x => x.Detail1)
+            </p>
+            <p>
+                @Html.Glass().Editable(Model, x => x.Detail2)
+            </p>
+
+            <blockquote class="pull-left">
+                But I must explain to you how all this mistaken idea of denouncing pleasure
+            </blockquote>
+            <p>
+                @Html.Glass().Editable(Model, x => x.Detail3)
+            </p>
+
+            <p>
+                But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                pain was born and I will give you a complete account of the system, and expound the
+                actual teachings of the great explorer of the truth, the master-builder of human
+                happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+                but because those who do not know how to pursue pleasure rationally encounter
+                consequences that are extremely painful.
+            </p>
+        </div>
+        <!-- entity_content -->
+
+        <div class="entity_footer">
+            <div class="entity_tag">
+                <span class="blank"><a href="#">Tech</a></span>
+                <span class="blank"><a href="#">Transport</a></span>
+                <span class="blank"><a href="#">Mobile</a></span>
+                <span class="blank"><a href="#">Gadgets</a></span>
+            </div>
+            <!-- entity_tag -->
+
+            <div class="entity_social">
+                <span><i class="fa fa-share-alt"></i>424 <a href="#">Shares</a> </span>
+                <span><i class="fa fa-comments-o"></i>4 <a href="#">Comments</a> </span>
+            </div>
+            <!-- entity_social -->
+
+        </div>
+        <!-- entity_footer -->
+
+    </div>
+    <!-- entity_wrapper -->
+
+    <div class="readers_comment" id="mainCmt">
+        @*<div class="entity_inner__title header_purple">
+            <h2>Readers Comment</h2>
+        </div>
+        <!-- entity_title -->
+        @foreach (var listCmt in Model.listCmt.OrderByDescending(x => x.Date_Time).ToList().Take(3))
+        {
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img alt="64x64" class="media-object" data-src="~/Datasource/img/reader_img1.jpg"
+                             src="~/Datasource/img/reader_img1.jpg" data-holder-rendered="true">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h2 class="media-heading"><a href="#">@listCmt.Name</a></h2>
+                    @listCmt.Comment
+
+                    <div class="entity_vote">
+                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a>
+                        <a href="#"><span class="reply_ic">Reply </span></a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- media end -->
+        }*@
+
+        @Html.Sitecore().Placeholder("comment list")
+
+        <div class="entity_comments">
+            <div class="entity_inner__title header_black">
+                <h2>Add a Comment</h2>
+            </div>
+            <!--Entity Title -->
+            <div class="entity_comment_from">
+                @using (Html.BeginForm("addComment", "Home", FormMethod.Post))
+                {
+                    <input type="hidden" name="idParent" value="@Sitecore.Context.Item.ID">
+                    <div class="form-group" data-itemid="@Sitecore.Context.Item.ID">
+                        <input type="text" class="form-control" id="inputName" placeholder="Name" name="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Email" name="Email">
+                    </div>
+                    <div class="form-group comment">
+                        <textarea class="form-control" id="inputComment" placeholder="Comment" name="Comment"></textarea>
+                    </div>
+                    @*<input type="hidden" id="inputId" name="parentId" value="@Sitecore.Context.Item.ID.ToString()"/>*@
+                    <button class="btn btn-submit red" onclick="window.upcoment()">Submit</button>
+                    }
+                </div>
+            <!--Entity Comments From -->
+        </div>
+        <!--Entity Comments -->
+
+    </div>
+    <!--Left Section-->

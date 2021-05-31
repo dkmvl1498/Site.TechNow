@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc.Analytics.Extensions
+@model RenderingModel
+
+<head>
+    <title>@Html.Sitecore().Field("TitePage")</title>
+    @Html.Sitecore().VisitorIdentification()
+</head>
+@Html.Sitecore().Placeholder("Feature news")

@@ -1,0 +1,101 @@
+﻿@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<Site.TechNow.Models.sitecore.templates.TechNow_template.Feature_New>
+@using Glass.Mapper.Sc.Web.Mvc
+@{
+    var produc = Model.Children.FirstOrDefault();
+}
+
+<section id="feature_news_section" class="feature_news_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                    <div class="feature_article_wrapper">
+                        <div class="feature_article_img">
+                            @Html.Glass().RenderImage(produc, x => x.Img_Post,new { @class = "img-responsive top_static_article_img", @alt = "feature-top" }, isEditable: true)
+                            @*<img class="img-responsive top_static_article_img" src="@Html.Glass().RenderImage(produc, x=>x.Img_Post.Src, isEditable: true)"
+                                 alt="feature-top">*@
+                        </div>
+                        <!-- feature_article_img -->
+                        <div class="feature_article_inner">
+                            <div class="tag_lg red"><a href="category.html">Hot News</a></div>
+                            <div class="feature_article_title">
+                                <h1><a href="@produc.Url" target="_self">@Html.Glass().Editable(produc, x => x.Title_Post)</a></h1>
+                            </div>
+                            <!-- feature_article_title -->
+
+                            <div class="feature_article_date">
+                                <a href="#" target="_self">Hanoi</a>,<a href="#"
+                                                                        target="_self">@produc.Time_Post.ToShortDateString()</a>
+                                                                    </div>
+                                                                    <!-- feature_article_date -->
+
+                                                                    <div class="feature_article_content">
+                                                                        @Html.Glass().Editable(produc, x => x.Description)
+                                                                    </div>
+                                                                    <!-- feature_article_content -->
+
+                                                                    <div class="article_social">
+                                                                        <span><i class="fa fa-share-alt"></i><a href="#">424</a>Shares</span>
+                                                                        <span><i class="fa fa-comments-o"></i><a href="#">4</a>Comments</span>
+                                                                    </div>
+                                                                    <!-- article_social -->
+                                                                </div>
+                                                                <!-- feature_article_inner -->
+                                                            </div>
+                                                            <!-- feature_article_wrapper -->
+            </div>
+            <!-- col-md-7 -->
+            @foreach (var item in Model.Children.Take(2))
+            {
+                <div class="col-md-5">
+                    <div class="feature_static_wrapper">
+                        <div class="feature_article_img">
+                            @Html.Glass().RenderImage(item, x=>x.Img_Post,new { @class="img-responsive" } ,isEditable: true)
+                            @*<img class="img-responsive" src="@Html.Glass().RenderImage(item,x => x.Img_Post.Src, isEditable: true)" alt="feature-top">*@
+                        </div>
+                        <!-- feature_article_img -->
+
+                        <div class="feature_article_inner">
+                            <div class="tag_lg purple"><a href="category.html">Top Viewed</a></div>
+                            <div class="feature_article_title">
+                                <h1><a href="@item.Url" target="_self">@Html.Glass().Editable(item, x=>x.Title_Post) </a></h1>
+                            </div>
+                            <!-- feature_article_title -->
+
+                            <div class="feature_article_date">
+                                <a href="#" target="_self">Stive Clark</a>,<a href="#"
+                                                                              target="_self">
+                                    Aug
+                                    @item.Time_Post.ToShortDateString()
+                                </a>
+                            </div>
+                            <!-- feature_article_date -->
+
+                            <div class="feature_article_content">
+                                @Html.Glass().Editable(item, x=>x.Description)
+                            </div>
+                            <!-- feature_article_content -->
+
+                            <div class="article_social">
+                                <span><i class="fa fa-share-alt"></i><a href="#">424</a>Shares</span>
+                                <span><i class="fa fa-comments-o"></i><a href="#">4</a>Comments</span>
+                            </div>
+                            <!-- article_social -->
+
+                        </div>
+                        <!-- feature_article_inner -->
+
+                    </div>
+                    <!-- feature_static_wrapper -->
+
+                </div>
+                <!-- col-md-5 -->
+            }
+
+        </div>
+        <!-- Row -->
+
+    </div>
+    <!-- container -->
+
+</section>
+<!-- Feature News Section -->

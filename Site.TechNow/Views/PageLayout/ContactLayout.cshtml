@@ -1,0 +1,37 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.Mvc.Presentation
+@model 
+@model RenderingModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>content page</title>
+</head>
+<body>
+    <h1>@Html.Sitecore().Field("TitePage")</h1>
+    <div>
+        @Html.Sitecore().Placeholder("main")
+    </div>
+    <h3>con card</h3>
+    <div class="entity_comment_from">
+        <form>
+            <input type="hidden"id="idParent" name="idParent" value="123321">
+            <div class="form-group" data-itemid="@Sitecore.Context.Item.ID">
+                <input type="text" class="form-control" id="inputName" placeholder="Name" name="Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="inputEmail" placeholder="Email" name="Email">
+            </div>
+            <div class="form-group comment">
+                <textarea class="form-control" id="inputComment" placeholder="Comment" name="Comment"></textarea>
+            </div>
+            @*<input type="hidden" id="inputId" name="parentId" value="@Sitecore.Context.Item.ID.ToString()"/>*@
+            <button type="button" class="btn btn-submit red" id="btncmt">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
